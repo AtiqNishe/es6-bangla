@@ -134,3 +134,23 @@ class Child extends Parent{
 
 const baby1 = new Child('Mastakin');
 console.log(baby1.getFullName());
+
+//Es-6 object destruct
+
+
+const electician = {name: 'Badsha', job:'Tarasima', info:{address:'comila',  village:'Mohatan'}, age:50, podobi:'Sr Electician', phone:01749670623}
+
+const {name,job, age, salary, phone} = electician;
+console.log(name,job, age, salary, phone);
+
+const {village}=electician.info;
+console.log(village);
+
+
+// Array destruct
+
+
+const electician1 = ['Badsha', 'Roni', 'Rasal', 'Sujon', 'Shofiq', 'Ebarot','Khalak'];
+const [first, second, ...restEle] = electician1;
+console.log(first,second);
+console.log(restEle);
